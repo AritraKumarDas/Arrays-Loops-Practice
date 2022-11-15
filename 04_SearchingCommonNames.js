@@ -16,6 +16,4 @@ for (let name of arr1) {
     }
 }
 
-
-
 console.log(unique)
