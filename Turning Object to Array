@@ -1,0 +1,19 @@
+//Turn an Object into an Array []
+
+let obj = {
+    id: "1",
+    name: "user22",
+    age: "26",
+    work: "programmer"
+    
+};
+
+const keysArray = Object.keys(obj);
+console.log(keysArray);
+
+const valuesArray = Object.values(obj);
+console.log(valuesArray);
+
+const entriesArray = Object.entries(obj);
+console.log(entriesArray);
+
