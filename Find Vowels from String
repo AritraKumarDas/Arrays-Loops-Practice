@@ -1,0 +1,14 @@
+//Write the code to find the vowels
+
+function findVowels(str){
+    temp=[];
+    for(let ch of str.toLowerCase()){
+        if( "aeiou".includes(ch) && !temp.includes(ch) ){
+               temp.push(ch); 
+        }
+    }
+    return temp;
+}
+
+console.log(findVowels("charismatic"));
+
