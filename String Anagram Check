@@ -1,0 +1,25 @@
+//Write the code given If two strings are anagrams of one another, then return true.
+
+
+function isAnagram(str1, str2){
+    
+    let s1 = str1.trim().toLowerCase().split("");
+    let s2 = str2.trim().toLowerCase().split("");
+    
+    console.log(s1);
+    console.log(s2);
+    
+    let temp = s2;
+    for(let i=0; i < s1.length; i++){
+        let index = temp.indexOf(s1[i]);
+        if(index !== -1){
+            temp.splice(index,1);
+        } else{
+            return false;
+        }
+    }
+    console.log(temp);
+    return temp.length===0;
+}
+
+console.log(isAnagram("heart", "earth"));
