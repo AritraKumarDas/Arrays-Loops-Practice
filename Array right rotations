@@ -1,0 +1,20 @@
+//Implement a function that returns an updated array with r right rotations on an array of integers a .
+//Example:
+//Given the following array: [2,3,4,5,7]
+//Perform 3 right rotations:
+//First rotation : [7,2,3,4,5] , Second rotation : [5,7,2,3,4] and, Third rotation: [4,5,7,2,3]
+//return [4,5,7,2,3]
+
+
+const arr = [10,20,30,40,50,60,70,80,90];
+
+function rotate(myarr, r){
+    for(let i=1;i<=r;i++){
+        let val = myarr.pop();
+        myarr.unshift(val);
+        console.log(i + " => " + myarr);
+    }
+    return myarr;
+}
+
+console.log(rotate(arr, 10));
